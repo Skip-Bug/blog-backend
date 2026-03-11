@@ -66,13 +66,9 @@
                  <img class="card-img rounded-0" src="{{ post.image_url }}" alt="{{ post.title }}">
                 </div>
                 <div class="blog__slide__content">
-<<<<<<< HEAD
                   <h3><a href="post/{{post.slug}}">{{ post.title }}</a></h3>
                   <p>{{ post.published_at }}</p>
-=======
-                  <h3><a href="#">{{post.title}}</a></h3>
-                  <p>{{post.published_at}}</p>
->>>>>>> parent of 3efa7dd (Update index.html)
+
                 </div>
               </div>
             </div>
@@ -129,7 +125,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
-<<<<<<< HEAD
+
             {% for post in fresh_posts %}
               <div class="single-recent-blog-post">
                 <div class="thumb">
@@ -151,9 +147,6 @@
                 <a class="button" href="post/{{post.slug}}"> Read More <i class="ti-arrow-right"></i></a>
                 </div>
             {% endfor %}
-
-=======
->>>>>>> parent of 3efa7dd (Update index.html)
               <div class="single-recent-blog-post">
                 <div class="thumb">
                   <img class="img-fluid" src="{% static 'img/blog/blog1.png' %}" alt="">
