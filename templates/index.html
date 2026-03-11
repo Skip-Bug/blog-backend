@@ -56,8 +56,6 @@
         </div>
       </section>
       <!--================Hero Banner end =================-->
-
-      <!--================ Blog slider start =================-->
       <section>
         <div class="container">
           <div class="d-flex">
@@ -65,15 +63,16 @@
             <div class="flex-fill" style="margin-right: 30px;">
               <div class="card blog__slide text-center">
                 <div class="blog__slide__img">
-                {% if post.image_url %}
-                  <img class="card-img rounded-0" src="{{ post.image_url }}" alt="">
-                {% else %}
-                  <img class="card-img rounded-0" src="{% static 'img/banner/blog.png' %}" alt="">
-                {% endif %}
+                 <img class="card-img rounded-0" src="{{ post.image_url }}" alt="{{ post.title }}">
                 </div>
                 <div class="blog__slide__content">
-                  <h3><a href="post/{{post.slug}}">{{post.title}}</a></h3>
+<<<<<<< HEAD
+                  <h3><a href="post/{{post.slug}}">{{ post.title }}</a></h3>
+                  <p>{{ post.published_at }}</p>
+=======
+                  <h3><a href="#">{{post.title}}</a></h3>
                   <p>{{post.published_at}}</p>
+>>>>>>> parent of 3efa7dd (Update index.html)
                 </div>
               </div>
             </div>
@@ -81,6 +80,7 @@
           </div>
         </div>
       </section>
+      <!--================ Blog slider start =================-->
       <section>
         <div class="container">
           <div class="d-flex">
@@ -129,6 +129,7 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-8">
+<<<<<<< HEAD
             {% for post in fresh_posts %}
               <div class="single-recent-blog-post">
                 <div class="thumb">
@@ -138,19 +139,21 @@
                   <img class="card-img rounded-0" src="{% static 'img/banner/blog.png' %}" alt="">
                 {% endif %}
                   <ul class="thumb-info">
-                  <li><a href="#"><i class="ti-user"></i>{{post.author}}</a></li>
-                  <li><a href="#"><i class="ti-notepad"></i>{{post.published_at}}</a></li>
-                  <li><a href="#"><i class="ti-themify-favicon"></i>{{post.comments_amount}}</a></li>
+                  <li><a href="#"><i class="ti-user"></i>{{ post.author }}</a></li>
+                  <li><a href="#"><i class="ti-notepad"></i>{{ post.published_at }}</a></li>
+                  <li><a href="#"><i class="ti-themify-favicon"></i>{{ post.comments_amount }}</a></li>
                   </ul>
                 </div>
                 <div class="details mt-20">
-                <h3>{{post.title}}</h3>
+                <h3>{{ post.title }}</h3>
                 <p>{{ post.text }}</p>
                 </div>
                 <a class="button" href="post/{{post.slug}}"> Read More <i class="ti-arrow-right"></i></a>
                 </div>
             {% endfor %}
 
+=======
+>>>>>>> parent of 3efa7dd (Update index.html)
               <div class="single-recent-blog-post">
                 <div class="thumb">
                   <img class="img-fluid" src="{% static 'img/blog/blog1.png' %}" alt="">
