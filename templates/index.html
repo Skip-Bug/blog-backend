@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sensive Blog - Home</title>
-    {% load static %}
+
     <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 
     <link rel="stylesheet" href="{% static 'styles.min.css' %}">
@@ -26,7 +27,7 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
               <ul class="nav navbar-nav menu_nav justify-content-center">
-                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="post/index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
               </ul>
               <ul class="nav navbar-nav navbar-right navbar-social">
@@ -72,7 +73,7 @@
                 </div>
               </div>
             </div>
-    {% endfor %}
+        {% endfor %}
           </div>
         </div>
       </section>
@@ -145,7 +146,7 @@
                 <p>{{ post.text|truncatechars:200 }}</p>
                 </div>
                 <a class="button" href="post/{{post.slug}}"> Read More <i class="ti-arrow-right"></i></a>
-                </div>
+              </div>
             {% endfor %}
               <div class="single-recent-blog-post">
                 <div class="thumb">
