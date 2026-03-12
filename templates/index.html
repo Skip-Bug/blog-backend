@@ -8,7 +8,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container box_1620">
             <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand logo_h" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt=""></a>
+            <a class="navbar-brand logo_h" href="{% url 'index' %}"><img src="{% static 'img/logo.png' %}" alt="Sensive Blog Logo"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
@@ -122,9 +122,9 @@
               <div class="single-recent-blog-post">
                 <div class="thumb">
                 {% if post.image_url %}
-                  <img class="card-img rounded-0" src="{{ post.image_url }}" alt="">
+                  <img class="card-img rounded-0" src="{{ post.image_url }}" alt="{{ post.title }}">
                 {% else %}
-                  <img class="card-img rounded-0" src="{% static 'img/banner/blog.png' %}" alt="">
+                  <img class="card-img rounded-0" src="{% static 'img/banner/blog.png' %}" alt="{{ post.title }}">
                 {% endif %}
                   <ul class="thumb-info" style="max-width: 550px">
                   <li><a href="#"><i class="ti-user"></i>{{ post.author }}</a></li>
@@ -139,7 +139,7 @@
                 <a class="button" href="{% url 'post_detail' post.slug %}"> Read More <i class="ti-arrow-right"></i></a>
               </div>
             {% endfor %}
-              <div class="single-recent-blog-post">
+<!--               <div class="single-recent-blog-post">
                 <div class="thumb">
                   <img class="img-fluid" src="{% static 'img/blog/blog1.png' %}" alt="">
                   <ul class="thumb-info">
@@ -153,9 +153,9 @@
                   <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
                   <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="single-recent-blog-post">
+<!--               <div class="single-recent-blog-post">
                 <div class="thumb">
                   <img class="img-fluid" src="{% static 'img/blog/blog2.png' %}" alt="">
                   <ul class="thumb-info">
@@ -169,9 +169,9 @@
                   <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
                   <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="single-recent-blog-post">
+<!--               <div class="single-recent-blog-post">
                 <div class="thumb">
                   <img class="img-fluid" src="{% static 'img/blog/blog3.png' %}" alt="">
                   <ul class="thumb-info">
@@ -185,9 +185,9 @@
                   <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
                   <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
                 </div>
-              </div>
+              </div> -->
 
-              <div class="single-recent-blog-post">
+<!--               <div class="single-recent-blog-post">
                 <div class="thumb">
                   <img class="img-fluid" src="{% static 'img/blog/blog4.png' %}" alt="">
                   <ul class="thumb-info">
@@ -201,7 +201,7 @@
                   <p>Over yielding doesn't so moved green saw meat hath fish he him from given yielding lesser cattle were fruitful lights. Given let have, lesser their made him above gathered dominion sixth. Creeping deep said can't called second. Air created seed heaven sixth created living</p>
                   <a class="button" href="#">Read More <i class="ti-arrow-right"></i></a>
                 </div>
-              </div>
+              </div> -->
 
 
               <div class="row">
