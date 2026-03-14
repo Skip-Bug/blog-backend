@@ -1,4 +1,4 @@
-  {% load static %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{% block title %}{% endblock %}</title>
+    <title>{% block title %}  {% endblock %}</title>
 
     <link rel="icon" href="{% static 'img/favicon.png' %}" type="image/png">
 
@@ -50,10 +50,8 @@
       </div>
     </header>
     <!--================Header Menu Area =================-->
-
     {% block content %}
     {% endblock %}
-
     <!--================ Start Footer Area =================-->
     <footer class="footer-area section-padding">
       <div class="container">
